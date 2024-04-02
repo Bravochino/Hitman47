@@ -1,8 +1,9 @@
 import { BaseCommand, Command, Message } from '../../Structures'
 
 @Command('demote', {
-    description: 'demonstrate',
-    category: 'moderation',
+    description: 'boss',
+    aliases: ['demote'] ,
+    category: 'boss',
     usage: 'demote',
     exp: 10,
     adminRequired: true,
