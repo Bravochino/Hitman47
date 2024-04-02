@@ -3,14 +3,14 @@ import { BaseCommand, Command, Message } from '../../Structures';
 const randomGreetings = [
     'Hello Human!',
     'Greetings!',
-    'i want the smoke DK hitman',
+    'i want the smoke My crush 🥺❤️',
     'Hey there!',
     'Hi, how can I assist you today?'
 ];
 
 @Command('alive', {
     description: 'Says alive',
-    category: 'general',
+    category: 'boss',
     usage: 'alive',
     aliases: ['ping'],
     exp: 25,
