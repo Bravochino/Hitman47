@@ -1,8 +1,9 @@
 import { BaseCommand, Command, Message } from '../../Structures'
 
 @Command('promote', {
-    description: '',
-    category: 'moderation',
+    description: 'crown 👑 ',
+    aliases: ['promote'] ,
+    category: 'boss',
     usage: 'promote',
     exp: 10,
     adminRequired: true,
