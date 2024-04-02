@@ -11,11 +11,11 @@ import { IArgs } from '../../Types'
 })
 export default class extends BaseCommand {
     private imageUrls: string[] = [
-        'https://telegra.ph/file/96e86a5fe768fb5cc6193.jpg',
-        'https://telegra.ph/file/78e38a311fb321471d83c.jpg',
-        'https://telegra.ph/file/41964deb11222c107996e.jpg',
-        'https://telegra.ph/file/8b87b410b49d61de535d3.jpg',
-        'https://telegra.ph/file/e9aa5e407abe6d7911ace.jpg',
+        'https://telegra.ph/file/277c60d1d94cd170cf67f.jpg',
+        'https://telegra.ph/file/67dc9b0fd95e6812243e9.jpg',
+        'https://telegra.ph/file/6a007d27ae59df5825e40.jpg',
+        'https://telegra.ph/file/7479b4def83c4c676498a.jpg',
+        'https://telegra.ph/file/3e80abd28d2188dbf942b.jpg',
     ]
     // you can add more pictures if you want bro or girl
     
@@ -43,10 +43,11 @@ export default class extends BaseCommand {
                 filteredCommands.forEach((command) => categoryCommands.push(command.data.name))
                 text += `\`\`\`➪${categoryCommands.join(' ● ')}\`\`\``
             }
-            text += `\n\n📕 *Note:*\n
+            text += `\n\n⚠ *Note:*\n
  *➪ Use ${this.client.config.prefix}help <command_name> for more info of a specific command* 
- *➪ Example: *${this.client.config.prefix}help hello*
- *➪ <> hitman47 ©️ 2024 Command List*`
+ *➪ Example: ${this.client.config.prefix}help hello*
+ *➪   🎉NEW VISION 2024 ✅*
+  *█║█ ║█│█║▌©️𝐌𝐀𝐑𝐈𝐀-𝐁𝐎𝐓 🤭 Inc*`
             return void (await M.reply(image, 'image', undefined, undefined, text, [M.sender.jid]))
         } else {
             const cmd = context.trim().toLowerCase()
@@ -62,7 +63,7 @@ export default class extends BaseCommand {
                 }s\n🎗 *Usage:* ${command.config.usage
                     .split('||')
                     .map((usage) => `${this.client.config.prefix}${usage.trim()}`)
-                    .join(' | ')}\n🧧 *Description:* ${command.config.description}`
+                    .join(' ● ')}\n🧧 *Description:* ${command.config.description}`
             )
         }
     }
